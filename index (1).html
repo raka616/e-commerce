@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Toko Online Saya</title>
+    <!-- Menggunakan Tailwind CSS CDN untuk kemudahan desain responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">Toko Saya</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:underline">Beranda</a>
+                <a href="#produk" class="hover:underline">Produk</a>
+                <a href="#kontak" class="hover:underline">Hubungi Kami</a>
+            </nav>
+            <a href="#produk" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-300">Belanja Sekarang</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-blue-500 text-white py-16 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Selamat Datang di Toko Saya</h2>
+            <p class="text-lg mb-8 opacity-90">Temukan produk-produk terbaik dengan harga terjangkau dan kualitas premium terpercaya.</p>
+            <a href="#produk" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold shadow-lg hover:bg-gray-100 transition">Lihat Katalog</a>
+        </div>
+    </section>
+
+    <!-- PRODUK SECTION (RESPONSIF GRID) -->
+    <main id="produk" class="container mx-auto px-4 py-12">
+        <h3 class="text-2xl font-bold text-center mb-8">Katalog Produk Unggulan</h3>
+        
+        <!-- Grid otomatis: 1 kolom di HP, 2 di tablet, 3 di laptop -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- KARTU PRODUK 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Produk 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-blue-600 font-bold uppercase">Gadget</span>
+                    <h4 class="text-lg font-semibold mt-2">Jam Tangan Minimalis</h4>
+                    <p class="text-gray-600 text-sm mt-1">Desain elegan yang cocok digunakan untuk acara formal maupun kasual sehari-hari.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">Rp 250.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20beli%20Jam%20Tangan" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-600">Beli via WA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU PRODUK 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Produk 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-blue-600 font-bold uppercase">Fashion</span>
+                    <h4 class="text-lg font-semibold mt-2">Sepatu Kets Sporty</h4>
+                    <p class="text-gray-600 text-sm mt-1">Bahan ringan, empuk, dan sangat nyaman dipakai untuk olahraga atau jalan-jalan.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">Rp 450.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20beli%20Sepatu%20Kets" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-600">Beli via WA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU PRODUK 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Produk 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-blue-600 font-bold uppercase">Elektronik</span>
+                    <h4 class="text-lg font-semibold mt-2">Headphone Premium</h4>
+                    <p class="text-gray-600 text-sm mt-1">Suara bass super jernih dengan fitur peredam bising kualitas studio musik.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">Rp 600.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20beli%20Headphone" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-600">Beli via WA</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER / KONTAK -->
+    <footer id="kontak" class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <p class="mb-2">&copy; 2026 Toko Saya. All Rights Reserved.</p>
+        <p>Dibuat langsung dari HP Android & Dihosting di GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
